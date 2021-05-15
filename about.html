@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="daksh">
+      <link rel="icon" href="images/Favicon.ico" id="faviconTag">
+      <title>About Me | Daksh Azad</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="css/animate.css">
+      <script src="js/wow.min.js"></script>
+
+       <!----parallax effect------>
+       <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+
+</head>
+<body>
+      <div class="wrapper">
+            
+
+            <!--------------- hero image starts here --------------->
+            <div class="container">
+                  <div class="row">
+                        <div class="col-lg-12 about image wow fadeInUp" data-wow-delay="0.5s">
+                        </div>
+                  </div>
+            </div>
+            <!--------------- hero image ends here --------------->
+
+
+            <!--------------- hero section starts here --------------->
+            <div class="container">
+                  <div class="hero-content">
+                        <div class="row about">
+                              <div class="col-lg-12">
+                                    <h3 class="wow fadeInUp" data-wow-delay="0.6s">About me</h3><br>
+                                    <p class="wow fadeInUp" data-wow-delay="0.7s">I am a full-stack developer and a designer. An engineer in making from Thapar Institute.
+                                          I try to create not just designs but experiences.
+                                    </p>
+
+
+                                    <p class="wow fadeInUp" data-wow-delay="0.8s">Living with passion is what I strictly adhere to. “Always do what you love” how much ever hackneyed this sounds it holds absolutely true. That's why I travel a lot. Not for the sole reason of “loving” to travel but it helps me to get rid of the world and escape into a different dimension of my own.</p>
+
+                                    <p class="wow fadeInUp" data-wow-delay="0.8s">I am a continuous learner. Learning for me equates to exploring new ideas and growing as an individual. I just cannot imagine my life devoid of designing. I freely express my creativity and imagination by designing.</p>
+
+                                    <p class="wow fadeInUp" data-wow-delay="0.8s">I am a movie and coffee addict. Fan of outdoor activities and TV series. I love music, especially POP. I think there's a good pop song in pretty much everything. Oops, I almost forgot how much I love playing basketball and working out.
+                                    I am always seeking ways to learn and grow. So if you think you have something for me, do <a href="contact.html" class="hit">let me know.</a> <br><br>
+                                    </p>
+
+                              </div>
+                        </div>
+
+                        <div class="back wow fadeInUp" data-wow-delay="1s"><a href="index.html">Back to Home</a></div>
+                  </div>
+            </div>
+            <!--------------- hero section ends here --------------->
+
+            
+            <br><br><br><br>
+            
+
+      </div>
+
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
+
+      new WOW().init();
+
+
+      </script>
+      <script>
+
+            const faviconTag = document.getElementById("faviconTag");
+            const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+            const changeFavicon = () => {
+            if (isDark.matches) faviconTag.href = "images/Favicon.ico";
+            else faviconTag.href = "images/Favicon(dark).ico";
+            };
+
+            changeFavicon();
+
+            setInterval(changeFavicon, 1000);
+      </script>
+
+
+
+</body>
+</html>
