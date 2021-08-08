@@ -385,6 +385,10 @@ nav #menu li a:hover {
       font-size: 24px;
     }
 
+    ion-icon{
+          color: #fff;
+    }
+
     @media(max-width: 768px) {
       .media ul li {
             display: none;
@@ -552,13 +556,13 @@ img {
 }
 
 .text-1 {
-      top: 200px;
+      top: 100px;
       left: -20px;
 }
 
 .text-2 {
       z-index: 1;
-      top: 280px;
+      top: 220px;
       left: 280px;
 }
 
@@ -591,17 +595,31 @@ img {
 }
 
 .ithree{
-      width: 80%;
-      margin-top: 4rem;
+      width: 70%;
+      margin-top: 7rem;
+      margin-left: 4rem;
+}
+.ifive{
+      width: 70%;
 }
 
 .isix{
       width: 80%;
       margin-top: 4rem;
 }
+.ione{
+      width: 80%;
+      transform: translateX(15px);
+}
 
 .ione, .itwo, .ifour, .ifive{
       opacity: 0.8;
+}
+.viewall .view{
+      color: #fff; text-decoration: underline;; position: absolute; right: 0; padding: 50px; font-size: 1.5rem;
+}
+.viewall .view:hover{
+      color: #f1Db61;
 }
 
 
